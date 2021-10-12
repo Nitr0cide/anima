@@ -10746,6 +10746,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  min-height: 150vh;
+}
+
 /* Header */
 .header-dark {
   background: url("/assets/images/slider.jpg");

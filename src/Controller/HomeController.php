@@ -17,10 +17,10 @@ class HomeController extends AbstractController
      */
     public function index(simklAPI $api): Response
     {
-        $content = $api->getAnimeFullInfo();
 
+        $content = $api->searchDetailedById();
         return $this->render('home/index.html.twig', [
-            "content" => $content->toArray()
+            "content" => $content,
         ]);
     }
 }
